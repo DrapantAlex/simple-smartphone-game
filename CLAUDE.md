@@ -6,9 +6,11 @@ Gioco 2D per browser/smartphone, satirico e non violento, che rappresenta la pro
 Alex non ha mai sviluppato un'applicazione. Spiega ogni passaggio in modo semplice, procedi a piccoli passi e, quando ci sono scelte tecniche, presenta le alternative con pro e contro e una raccomandazione. Rispondi in italiano.
 
 ## Stato attuale
-- `index.html`: prototipo giocabile in un unico file (canvas 2D, grafica disegnata via codice, 640×360 logici, scalato allo schermo).
-- I progressi (stagione, missioni, sblocchi) sono salvati in `localStorage`.
-- Il "corteo collettivo" usa `window.claude.use('db')`, che esiste solo quando il gioco gira come artifact su claude.ai. Fuori da lì il gioco ricade su "solo locale". Per una versione pubblica servirà un backend esterno (es. Firebase o Supabase).
+- **Versione Phaser 3 + Vite** (passo 2a fatto): `src/logic/` (regole pure, testate con `npm test`), `src/views/` (sprite a pezzi, sfondi a parallasse), `src/scenes/` (Boot, Menu, Game). Mondo logico 640×360, canvas 1280×720 con zoom camera ×2 per la nitidezza. Sprite SVG segnaposto in `public/assets/`, generati da `tools/make-placeholders.mjs`.
+- Nella versione Phaser per ora ci sono: corsa, salto a onda, piramide, raccolta tifosi, Cairo in fuga, 4 zone. **Mancano (passo 2b)**: ostacoli lanciati, tornelli, mezzi di fuga, fumogeno, fine giornata, stagione, missioni, salvataggi, suoni.
+- `prototype/index.html`: vecchio prototipo in un unico file, completo di tutte le meccaniche; è il riferimento per il passo 2b (ma non portare i "sacchi di soldi" né striscioni diversi da CAIRO VATTENE / CAIRO VENDI).
+- Nel prototipo i progressi (stagione, missioni, sblocchi) sono salvati in `localStorage`.
+- Il "corteo collettivo" del prototipo usa `window.claude.use('db')`, che esiste solo quando il gioco gira come artifact su claude.ai. Fuori da lì il gioco ricade su "solo locale". Per una versione pubblica servirà un backend esterno (es. Firebase o Supabase).
 
 ## Dinamica di gioco (confermata da Alex, non stravolgerla)
 - **Corsa infinita**: ogni partita è una "giornata". Tocca/spazio per saltare; il corteo salta a onda e si impila a piramide (max 36 tifosi).
@@ -20,7 +22,7 @@ Alex non ha mai sviluppato un'applicazione. Spiega ogni passaggio in modo sempli
 
 ## Prossimi passi (roadmap concordata)
 1. ✅ **Guida di stile** (`docs/style-guide.md`, fatta: seguila per ogni asset): proporzioni dei personaggi, palette granata, contorni, luci, riferimenti ai luoghi veri di Torino (portici di Via Po, Piazza Vittorio e Gran Madre, Mole, Superga, Murazzi, Stadio Filadelfia, Olimpico Grande Torino con la torre Maratona).
-2. **Motore a sprite**: ristrutturare il gioco in Phaser 3 (o un'architettura equivalente) separando la logica dagli asset grafici (`assets/`), con sprite segnaposto.
+2. **Motore a sprite** (Phaser 3 + Vite): ✅ 2a struttura e nucleo giocabile; ⏳ 2b portare le altre meccaniche del prototipo.
 3. **Nuove meccaniche**:
    - oggetti lanciati più credibili (giornali, microfoni e telecamere, faldoni "CESSIONE"/"PLUSVALENZA", panchina dell'allenatore esonerato, coppa del 10° posto), niente sacchi di soldi;
    - mezzi di fuga diversi (elicottero, berlina nera, furgone nero, eventuale motoscafo sul Po), ognuno con una meccanica propria;

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="200" viewBox="0 0 2560 800">
+<!-- SEGNAPOSTO generato da tools/make-placeholders.mjs: da sostituire con lo sprite definitivo -->
+
+<path d="M0 800 L0 420 Q1280 300 2560 420 L2560 800 Z" fill="#4A4E70" stroke="#5A4A50" stroke-width="8" stroke-linejoin="round"/>
+<path d="M0 460 Q1280 350 2560 460" stroke="#5A0F1A" stroke-width="22" fill="none"/><path d="M0 510 Q1280 400 2560 510" stroke="#8B1A2B" stroke-width="22" fill="none"/><path d="M0 560 Q1280 450 2560 560" stroke="#5A0F1A" stroke-width="22" fill="none"/><path d="M0 610 Q1280 500 2560 610" stroke="#8B1A2B" stroke-width="22" fill="none"/><path d="M0 660 Q1280 550 2560 660" stroke="#5A0F1A" stroke-width="22" fill="none"/><path d="M0 710 Q1280 600 2560 710" stroke="#8B1A2B" stroke-width="22" fill="none"/>
+<rect x="1700" y="40" width="200" height="760" fill="#5A5E80" stroke="#5A4A50" stroke-width="8" stroke-linejoin="round"/>
+<rect x="1720" y="70" width="14" height="700" fill="#3B3F6B"/><rect x="1750" y="70" width="14" height="700" fill="#3B3F6B"/><rect x="1780" y="70" width="14" height="700" fill="#3B3F6B"/><rect x="1810" y="70" width="14" height="700" fill="#3B3F6B"/><rect x="1840" y="70" width="14" height="700" fill="#3B3F6B"/><rect x="1870" y="70" width="14" height="700" fill="#3B3F6B"/>
+<rect x="1680" y="20" width="240" height="40" fill="#6A6E90" stroke="#5A4A50" stroke-width="8" stroke-linejoin="round"/>
+<rect x="292" y="100" width="16" height="320" fill="#3A3F44"/><rect x="230" y="60" width="140" height="60" rx="8" fill="#FFF6D0" stroke="#5A4A50" stroke-width="8" stroke-linejoin="round"/><rect x="1092" y="100" width="16" height="320" fill="#3A3F44"/><rect x="1030" y="60" width="140" height="60" rx="8" fill="#FFF6D0" stroke="#5A4A50" stroke-width="8" stroke-linejoin="round"/><rect x="2292" y="100" width="16" height="320" fill="#3A3F44"/><rect x="2230" y="60" width="140" height="60" rx="8" fill="#FFF6D0" stroke="#5A4A50" stroke-width="8" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="60" viewBox="0 0 256 240">
+<!-- SEGNAPOSTO generato da tools/make-placeholders.mjs: da sostituire con lo sprite definitivo -->
+
+<rect width="256" height="40" fill="#C9B8A8"/><rect y="36" width="256" height="6" fill="#8E7E70"/>
+<rect y="42" width="256" height="198" fill="#55505C"/>
+<rect x="40" y="130" width="80" height="8" fill="#F4EFE6" opacity="0.6"/>
+</svg>

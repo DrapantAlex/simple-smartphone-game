@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 40 72">
+<!-- SEGNAPOSTO generato da tools/make-placeholders.mjs: da sostituire con lo sprite definitivo -->
+
+<path d="M18 68 Q14 40 22 22" fill="none" stroke="#2A0A10" stroke-linejoin="round" stroke-linecap="round" stroke-width="22"/>
+<path d="M18 68 Q14 40 22 22" fill="none" stroke="#2B2F3A" stroke-width="12" stroke-linecap="round"/>
+<circle cx="24" cy="16" r="8" fill="#E8B48C" stroke="#2A0A10" stroke-linejoin="round" stroke-linecap="round" stroke-width="6"/>
+<rect x="24" y="2" width="10" height="24" rx="3" fill="#1A1C22" stroke="#2A0A10" stroke-linejoin="round" stroke-linecap="round" stroke-width="4"/>
+</svg>

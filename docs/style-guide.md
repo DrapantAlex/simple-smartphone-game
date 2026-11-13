@@ -159,7 +159,7 @@ Ogni tifoso pesca a caso: pelle (5 toni), capelli (4), cappello sì/no, accessor
 
 - Le scritte HUD sono `oro` con contorno `contorno` di 2 px.
 - Le scritte sugli striscioni sono `bianco-panna` (o `granata` su striscione bianco), leggermente storte (±2°).
-- I font vanno inclusi in `assets/fonts/` (non caricati da CDN), così il gioco funziona anche offline.
+- I font sono inclusi nel progetto tramite i pacchetti npm `@fontsource/...` (non caricati da CDN), così il gioco funziona anche offline.
 
 ### Striscioni sui palazzi
 
@@ -259,20 +259,21 @@ Nessun marchio, nessun logo, nessuna targa leggibile.
 ## 9. Regole tecniche per gli asset
 
 - **Formato:** SVG, un file per pezzo o per oggetto.
-- **Cartelle:**
+- **Cartelle** (dentro `public/`, che Vite pubblica così com'è):
   ```
-  assets/
+  public/assets/
     sprites/tifoso/      head_*.svg, torso_*.svg, arm_*.svg, leg_*.svg, acc_*.svg
     sprites/cairo/
     sprites/mezzi/
     sprites/oggetti/
-    backgrounds/zona1-centro/  zona2-po/  zona3-filadelfia/  zona4-olimpico/
-    fonts/
+    backgrounds/centro/  po/  filadelfia/  olimpico/   (far.svg, mid.svg, ground.svg)
   ```
 - **Nomi file:** minuscolo, trattini, niente spazi (`faldone-cessione.svg`).
 - **Contorni:** `stroke-linejoin="round"` e `stroke-linecap="round"`, colore `#2A0A10`.
 - **Colori:** solo quelli di questa guida. Un colore nuovo si aggiunge prima qui.
 - **Niente** testo convertito in tracciati negli SVG dei personaggi; il testo degli striscioni si genera nel gioco con il font.
+- **Parti tintabili del tifoso** (`head`, `hair`, `cap`, `torso`, `arm`, `leg`): disegnate in bianco `#FFFFFF` con ombra grigia `#BDBDBD`; il gioco le colora con pelle, maglia ecc. Le altre parti (`face`, `scarf`, tutto Cairo) hanno colori fissi.
+- I file attuali sono **segnaposto** generati da `tools/make-placeholders.mjs`: per sostituirne uno basta salvare lo sprite vero con lo stesso nome e le stesse misure.
 
 ---
 

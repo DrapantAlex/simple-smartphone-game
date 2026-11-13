@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="170" viewBox="0 0 2560 680">
+<!-- SEGNAPOSTO generato da tools/make-placeholders.mjs: da sostituire con lo sprite definitivo -->
+
+<path d="M0 680 L0 460 Q500 300 1100 330 Q1700 360 2560 470 L2560 680 Z" fill="#B7B39A"/>
+<g fill="#A8A08C">
+  <rect x="980" y="270" width="140" height="60"/>
+  <path d="M1000 270 A50 50 0 0 1 1100 270 Z"/>
+  <rect x="1046" y="200" width="8" height="30"/>
+  <rect x="960" y="250" width="22" height="80"/><rect x="1118" y="250" width="22" height="80"/>
+</g>
+</svg>
