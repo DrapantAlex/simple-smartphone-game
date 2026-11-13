@@ -15,11 +15,11 @@ Alex non ha mai sviluppato un'applicazione. Spiega ogni passaggio in modo sempli
 - **Cairo** corre davanti, lancia oggetti all'indietro e periodicamente tenta la fuga con un mezzo: servono N tifosi per respingerlo.
 - **Stagione** di 38 giornate: la "pressione" accumulata deve superare una soglia per costringere Cairo a vendere.
 - **Missioni** (3 attive alla volta) che sbloccano extra estetici e piccoli vantaggi.
-- **Zone** che si alternano ogni 600 m: Via Roma → Via Filadelfia → Stadio Grande Torino.
+- **Zone** che si alternano ogni 600 m: Centro (Via Roma/Via Po) → Lungo Po (Piazza Vittorio, Murazzi, Gran Madre) → Via Filadelfia → Stadio Olimpico Grande Torino. Il prototipo ha ancora 3 zone; la quarta (Lungo Po) è stata decisa con la guida di stile e va aggiunta con il motore a sprite.
 - Power-up **fumogeno** → "QUARTO D'ORA GRANATA!" (invincibilità per 5 s).
 
 ## Prossimi passi (roadmap concordata)
-1. **Guida di stile** (`docs/style-guide.md`): proporzioni dei personaggi, palette granata, contorni, luci, riferimenti ai luoghi veri di Torino (portici di Via Po, Piazza Vittorio e Gran Madre, Mole, Superga, Murazzi, Stadio Filadelfia, Olimpico Grande Torino con la torre Maratona).
+1. ✅ **Guida di stile** (`docs/style-guide.md`, fatta: seguila per ogni asset): proporzioni dei personaggi, palette granata, contorni, luci, riferimenti ai luoghi veri di Torino (portici di Via Po, Piazza Vittorio e Gran Madre, Mole, Superga, Murazzi, Stadio Filadelfia, Olimpico Grande Torino con la torre Maratona).
 2. **Motore a sprite**: ristrutturare il gioco in Phaser 3 (o un'architettura equivalente) separando la logica dagli asset grafici (`assets/`), con sprite segnaposto.
 3. **Nuove meccaniche**:
    - oggetti lanciati più credibili (giornali, microfoni e telecamere, faldoni "CESSIONE"/"PLUSVALENZA", panchina dell'allenatore esonerato, coppa del 10° posto), niente sacchi di soldi;
